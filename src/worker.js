@@ -4,7 +4,7 @@ const connection = {
     host: process.env.REDIS_HOST,
     port: process.env.REDIS_PORT,
 };
-
+console.log('connection', connection);
 // Initialize the queue
 const myQueue = new Queue('myQueue', { connection });
 
